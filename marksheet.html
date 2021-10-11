@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Marks Sheet</h1>
+<div>
+    <section id="Marks-Section">
+        <p>
+            Enter Percentage:
+            <input type="text" id="txt1" name="text1" value="1">
+          </p>
+    </section>
+    <p>
+        Click the button to calculate Your Gades.
+        <button onclick="myFunction()">Grades</button>
+      </p>
+        </div>
+        <p id="demo"></p>
+    </div>
+</div>
+<script>
+    function myFunction(){
+       
+        var y = document.getElementById("txt1").value;
+        if (y>= 80 && y<=100){
+            document.getElementById("demo").innerHTML= "A-one Grade";
+        }
+        else if(y>= 70 && y< 79 ) {
+            document.getElementById("demo").innerHTML="A Grade";
+        
+        }
+        else if(y>= 60 && y< 69 ) {
+            document.getElementById("demo").innerHTML="B Grade";
+        }
+        else if(y <= 59) {
+            document.getElementById("demo").innerHTML="Fail"
+        }
+    }
+        </script>
+</body>
+</html> 

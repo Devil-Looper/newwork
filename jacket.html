@@ -1,0 +1,47 @@
+
+<!-- Jacket Checker  -->
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFunction() {
+            var y = document.getElementById("txt1").value;
+            if (y >= 25) {
+                document.getElementById("demo").innerHTML = "dont carry";
+            }
+            else if (y < 25 && y > 15) {
+                document.getElementById("demo").innerHTML = "carry Jacket";
+            }
+            else if (y < 15 && y > 0) {
+                document.getElementById("demo").innerHTML = "carry coat";
+            }
+            else if (y = 0) {
+                document.getElementById("demo").innerHTML = "dont go out";
+            }
+        }
+    </script>
+    <h1>Jacket checker</h1>
+    <div>
+        <section id="Jacket">
+            <p>
+                Enter Tempreature:
+                <input type="text" id="txt1" name="text1" value="1">
+            </p>
+        </section>
+        <p>
+            Click the button to Temperature Condition.
+            <button onclick="myFunction()">Tells</button>
+        </p>
+    </div>
+    <p id="demo"></p>
+    </div>
+    </div>
+</body>
+</html>
