@@ -8,10 +8,11 @@
     function myFunction() {
       var y = document.getElementById('txt1').value;
       var z = document.getElementById('txt2').value;
-      if (y != 0) {
-        var x = y * 170 + 'Rs';
+      var x;
+      if (y) {
+        x = y * 170 + 'Rs';
       } else {
-        var x = z / 170 + '$';
+        x = z / 170 + '$';
       }
 
       document.getElementById('demo1').innerHTML = x;
@@ -24,6 +25,7 @@
     <div id="centerbox">
       <section id="fetch">
         <p>
+            <P>Both Fields can not have vales simultaneously</P>
           Enter Dollor :
           <input type="text" id="txt1" name="text1" value="1" />
           Enter Rupees:
